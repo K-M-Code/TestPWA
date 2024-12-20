@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 // import { Roboto_Slab, Roboto_Condensed, Reddit_Sans, Reddit_Sans_Condensed } from "next/font/google";
 import "./globals.css";
-
+import { PwaProvider } from "@/components/PWAContext";
 
 
 // export const robotoSlab = Roboto_Slab({
@@ -40,7 +40,9 @@ export default function RootLayout({
       <body 
         className={``}
       >
+        <PwaProvider>
         {children}
+        </PwaProvider>
       </body>
     </html>
   );
