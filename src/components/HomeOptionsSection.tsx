@@ -28,7 +28,7 @@ const items: Item[] = [
     id: 2,
     src: image6,
     alt: 'Photo by Magicle',
-    title: 'Merchendise',
+    title: 'Merchandise',
   },
   {
     id: 3,
