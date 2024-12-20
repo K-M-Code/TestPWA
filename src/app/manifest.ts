@@ -3,8 +3,8 @@ import type { MetadataRoute } from 'next'
  
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Billawar Community App"',
-    short_name: 'Billawar',
+    name: 'Billawar Community App',
+    short_name: 'Billawar Community',
     description: 'The community app of Billawar Association, Mumbai and the World',
     start_url: '/',
     display: 'standalone',
