@@ -6,6 +6,10 @@ import image3 from '@/public/images/Yakshagana-2.jpg'
 import image4 from '@/public/images/kodachadri-hills-mangalore-karnataka-1-attr-hero.jpeg'
 import image5 from '@/public/images/kudroli-gokarnath-temple-mangalore-karnataka-tri-hero.jpeg'
 import image6 from '@/public/images/raviraj-moolya-yakshagana.jpg'
+import image7 from '@/public/images/kanika-pant-PiuvhBTvrp0-unsplash.jpg'
+import image8 from '@/public/images/sonika-agarwal-vMC-8nfeIfQ-unsplash.jpg'
+import image9 from '@/public/images/micheile-henderson-lZ_4nPFKcV8-unsplash.jpg'
+import image10 from '@/public/images/mediamodifier-I3HPUolh5hA-unsplash.jpg'
 
 
 interface Item {
@@ -54,6 +58,30 @@ const items: Item[] = [
     alt: 'Photo by Lorenzo Herrera',
     title: 'Community Forum',
   },
+  {
+    id: 7,
+    src: image7,
+    alt: 'Photo',
+    title: 'Matrimonial',
+  },
+  {
+    id: 8,
+    src: image8,
+    alt: 'Photo',
+    title: 'Live Pooja',
+  },
+  {
+    id: 9,
+    src: image9,
+    alt: 'Photo',
+    title: 'Financial Assistance',
+  },
+  {
+    id: 10,
+    src: image10,
+    alt: 'Photo',
+    title: 'Government Schemes',
+  }
 ];
 
 // Component
