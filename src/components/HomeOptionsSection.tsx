@@ -1,16 +1,16 @@
-import type { StaticImageData } from 'next/image'
+import type { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
-import image1 from '@/public/images/468455883_592765846553926_8992478740275370630_n.jpg'
-import image2 from '@/public/images/ashoka-thumb.jpg'
-import image3 from '@/public/images/Yakshagana-2.jpg'
-import image4 from '@/public/images/kodachadri-hills-mangalore-karnataka-1-attr-hero.jpeg'
-import image5 from '@/public/images/kudroli-gokarnath-temple-mangalore-karnataka-tri-hero.jpeg'
-import image6 from '@/public/images/raviraj-moolya-yakshagana.jpg'
-import image7 from '@/public/images/kanika-pant-PiuvhBTvrp0-unsplash.jpg'
-import image8 from '@/public/images/sonika-agarwal-vMC-8nfeIfQ-unsplash.jpg'
-import image9 from '@/public/images/micheile-henderson-lZ_4nPFKcV8-unsplash.jpg'
-import image10 from '@/public/images/mediamodifier-I3HPUolh5hA-unsplash.jpg'
-
+import image1 from '@/public/images/468455883_592765846553926_8992478740275370630_n.jpg';
+import image2 from '@/public/images/ashoka-thumb.jpg';
+import image3 from '@/public/images/Yakshagana-2.jpg';
+import image4 from '@/public/images/kodachadri-hills-mangalore-karnataka-1-attr-hero.jpeg';
+import image5 from '@/public/images/kudroli-gokarnath-temple-mangalore-karnataka-tri-hero.jpeg';
+import image6 from '@/public/images/raviraj-moolya-yakshagana.jpg';
+import image7 from '@/public/images/kanika-pant-PiuvhBTvrp0-unsplash.jpg';
+import image8 from '@/public/images/sonika-agarwal-vMC-8nfeIfQ-unsplash.jpg';
+import image9 from '@/public/images/micheile-henderson-lZ_4nPFKcV8-unsplash.jpg';
+import image10 from '@/public/images/mediamodifier-I3HPUolh5hA-unsplash.jpg';
 
 interface Item {
   id: number;
@@ -20,9 +20,7 @@ interface Item {
 }
 
 const items: Item[] = [
-    
   {
-    
     id: 1,
     src: image4,
     alt: 'Photo by Minh Pham',
@@ -81,14 +79,14 @@ const items: Item[] = [
     src: image10,
     alt: 'Photo',
     title: 'Government Schemes',
-  }
+  },
 ];
 
 // Component
 const HomeOptionsSection = () => {
   return (
         <section className='relative flex h-fit w-full items-center justify-center'>
-            <div className=' w-full bg-white py-6 dark:bg-gray-800 sm:py-8 lg:py-12'>
+      <div className='w-full bg-white py-6 dark:bg-gray-800 sm:py-8 lg:py-12'>
                 <div className='mx-auto max-w-screen-2xl px-4 md:px-8'>
                     <div className='mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12'>
                         <div className='flex items-center gap-12'>
@@ -105,11 +103,15 @@ const HomeOptionsSection = () => {
                             href=''
                             className='group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80'
                         >
-                            <img
+                <Image
                   src={item.src.src}
                   alt={item.alt}
-                                className='absolute inset-0 size-full object-cover object-center transition duration-200 group-hover:scale-110'
-                            />
+                  width={500}
+                  height={500}
+                  sizes='(min-width: 768px) 50vw, 100vw'
+                  className='absolute inset-0 size-full object-cover object-center'
+                />
+                                {/* className='absolute inset-0 size-full object-cover object-center transition duration-200 group-hover:scale-110' */}
 
                             <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'></div>
 
