@@ -11,6 +11,8 @@ import image7 from '@/public/images/kanika-pant-PiuvhBTvrp0-unsplash.jpg';
 import image8 from '@/public/images/sonika-agarwal-vMC-8nfeIfQ-unsplash.jpg';
 import image9 from '@/public/images/micheile-henderson-lZ_4nPFKcV8-unsplash.jpg';
 import image10 from '@/public/images/mediamodifier-I3HPUolh5hA-unsplash.jpg';
+import image11 from '@/public/images/vizag-explore-MsQqVwnF8Pw-unsplash.jpg';
+import image12 from '@/public/images/Billawa-Jagruti-Eakikarana-Sabhe-1.jpg';
 
 interface Item {
   id: number;
@@ -28,9 +30,9 @@ const items: Item[] = [
   },
   {
     id: 2,
-    src: image6,
+    src: image12,
     alt: 'Photo by Magicle',
-    title: 'Merchandise',
+    title: 'Membership',
   },
   {
     id: 3,
@@ -79,6 +81,18 @@ const items: Item[] = [
     src: image10,
     alt: 'Photo',
     title: 'Government Schemes',
+  },
+  {
+    id: 11,
+    src: image6,
+    alt: 'Photo by Magicle',
+    title: 'Merchandise',
+  },
+  {
+    id: 12,
+    src: image11,
+    alt: 'Photo by Magicle',
+    title: 'Agriculture',
   },
 ];
 
