@@ -13,6 +13,7 @@ import image9 from '@/public/images/micheile-henderson-lZ_4nPFKcV8-unsplash.jpg'
 import image10 from '@/public/images/mediamodifier-I3HPUolh5hA-unsplash.jpg'
 import image11 from '@/public/images/vizag-explore-MsQqVwnF8Pw-unsplash.jpg'
 import image12 from '@/public/images/Billawa-Jagruti-Eakikarana-Sabhe-1.jpg'
+import image13 from '@/public/images/Tanush-Kotian-380x214.jpg'
 
 interface Item {
     id: number
@@ -93,6 +94,12 @@ const items: Item[] = [
         src: image11,
         alt: 'Photo by Magicle',
         title: 'Agriculture'
+    },
+    {
+        id: 13,
+        src: image13,
+        alt: 'Photo by Magicle',
+        title: 'Sports'
     }
 ]
 
